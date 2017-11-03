@@ -1,0 +1,26 @@
+{
+  "name": "spectron-test-example",
+  "version": "0.0.1",
+  "description": "A sample Electron application to demonstrate tesing using Spectron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "mocha"
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "Spectron",
+    "testing",
+    "Mocha",
+    "chai"
+  ],
+  "author": "Leif Wells",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "electron": "~1.6.2",
+    "mocha": "^3.5.0",
+    "spectron": "^3.7.2"
+  }
+}

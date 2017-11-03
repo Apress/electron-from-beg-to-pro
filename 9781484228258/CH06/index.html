@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+  <style>
+    p {
+      font-family: sans-serif;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: .5rem;
+      background-color: #ddd;
+      box-shadow: inset 0 0 2px #aaa;
+    }
+    
+    button {
+      color: rebeccapurple;
+      font-family: sans-serif;
+      font-weight: bold;
+      padding: .5rem;
+      background-color: #ccc;
+      box-shadow: 2px 2px 2px #ccc;
+    }
+  </style>
+
+</head>
+
+<body>
+  <button id="sendSyncMsgBtn">Ping Main Process</button>
+  <p id="sync-reply">Awaiting response</p>
+  <button id="sendASyncMsgBtn">Ping Main Process Async</button>
+  <p id="async-reply">Awaiting async response</p>
+
+</body>
+
+<script>
+  // You can also require other files to run in this process
+  require('./renderer.js')
+
+</script>
+
+</html>
